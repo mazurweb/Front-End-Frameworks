@@ -10,11 +10,39 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
-</head>
-<body ng-app="groceryList">
-    <div id="wrapper">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,600,300,700,800,900' rel='stylesheet' type='text/css'>
 
+    <script src="js/shared/angular.min.js"></script>
+    <script src="js/grocery.js"></script>
+    <script src="js/controllers/GroceryController.js"></script>
+</head>
+
+<body ng-app="myApp">
+    <div id="wrapper">
+        <div class="container groceryList" ng-controller="GroceryController">
+            <h1>Grocery List</h1>
+
+            <div class="itemInput clearfix">
+                <form ng-submit="addItem()">
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <input type="text" class="col-md-6 pull-left form-control newItem" placeholder="Add an Item" ng-model="newItem" />
+                        <button type="submit" class="btn btn-primary">Add Item</button>
+                    </div>
+                </form>
+
+                <span style="color: #fff; font-size: 22px;">Item to be Added: <span style="font-weight: bold;">{{ newItem }}</span></span>
+            </div>
+
+            <div class="itemList">
+                <h2>My Items to Buy ({{ groceries.length }}):</h2>
+
+                <ul>
+                    <li ng-repeat="item in groceries">
+                       {{ item }} <button ng-click="removeItem(item)">&times;</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 </html>

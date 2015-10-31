@@ -1,0 +1,62 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    background: #e5e5e5;
+}
+#wrapper {
+    padding: 0;
+    margin: 0;
+}
+.groceryList {
+    margin-top: 20px;
+    background: #1484e6;
+    box-shadow: 0 0 10px #111;
+    border-radius: 5px;
+    padding: 10px;
+}
+.groceryList h1 {
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+}
+.groceryList h2 {
+    color: #fff;
+    font-weight: 600;
+}
+
+.itemInput button {
+    background: #FFB612;
+    border: #FFB612;
+    padding: 7px 20px;
+    margin-left: 10px;
+}
+.itemInput button:hover, .itemInput button:active, .itemInput button:focus, .itemInput button:visited {
+    background: #e5a311!important;
+    border: #e5a311!important;
+}
+input.form-control.newItem {
+    width: 90%;
+}
+.itemInput.clearfix, .itemList {
+    padding: 20px 20px 10px 20px;
+    background: rgba(222, 222, 222, 0.81);
+    border-radius: 5px;
+}
+.itemList {
+    margin-top: 15px;
+}
+.itemList button, .itemList button:hover, .itemList button:active, .itemList button:focus, .itemList button:visited {
+    background: none!important;
+    color: #333!important;
+    border: none!important;
+    padding: 0 0 0 10px!important;
+    font-size: 28px!important;
+}
+ul li {
+    list-style: none;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+}
