@@ -4,6 +4,34 @@
 
 angular.module("myApp").service("DataService", function(){
 
+    // Grocery Data Service Section
+
+    var groceriesArray = ["Milk", "Cheese", "Eggs", "Bread"];
+
+
+    this.getGroceries = function() {
+        var str = localStorage.getItem("GroceryList");
+        groceriesArray = JSON.parse(str)  || groceriesArray;
+        return groceriesArray;
+    }
+
+    this.newGrocery = function(grocery) {
+        var newGrocery = grocery;
+
+        groceriesArray.push(newGrocery);
+        var str = JSON.stringify(groceriesArray);
+        localStorage.setItem("GroceryList", str);
+    }
+
+    this.removeGrocery = function(grocery) {
+        groceriesArray.splice(groceriesArray.indexOf(grocery), 1);
+        var str = JSON.stringify(groceriesArray);
+        localStorage.setItem("GroceryList", str);
+    }
+
+
+
+
     // Address Data Service Section
 
     var addressArray = [];

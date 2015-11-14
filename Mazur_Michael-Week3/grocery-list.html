@@ -1,5 +1,23 @@
 <h2>Grocery List</h2>
 
-<div ng-controller="GroceryController">
+<div ng-controller="GroceryController" role="form" class="form-horizontal">
+    <form name="newGroceryItem">
+        <input type="text" placeholder="Add a Grocery Item" ng-model="groceryItem" />
+        <input type="submit" class="btn btn-primary" value="Add Item" ng-click="addGrocery()" />
+        <div class="message">{{ msg }}</div>
+    </form>
 
+    <div id="parameterBox">
+        <h4>Your route parameter word of the day is:</h4>
+        <p id="parameterWord">{{ word }}</p>
+    </div>
+
+    <div class="listSection">
+        <h3>Grocery Items ( {{ groceriesArray.length }} ):</h3>
+
+        <ul>
+            <!--REPEATING LIST ITEMS USING ANGULARJS-->
+            <li ng-repeat="grocery in groceriesArray track by $id($index)"><div><span>&rarr; &nbsp;&nbsp;{{ grocery }}</span></div><button type="button" class="close" aria-hidden="true" ng-click="removeGrocery(grocery)">&times;</button></li>
+        </ul>
+    </div>
 </div>

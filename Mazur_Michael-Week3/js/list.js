@@ -6,7 +6,7 @@ angular.module('myApp', ['ngRoute'])
 
     .config(function($routeProvider){
 
-        $routeProvider.when('/grocery', {
+        $routeProvider.when('/grocery/:groceryParam', {
             templateUrl : "grocery-list.html",
             controller : "GroceryController"
         }).when('/todo', {
@@ -21,6 +21,33 @@ angular.module('myApp', ['ngRoute'])
 
     })
 
+    // Grocery Controller
+    .controller('GroceryController', function($scope,$routeParams,DataService){
+
+        $scope.groceryItem;
+
+        $scope.word = $routeParams.groceryParam;
+
+
+        /*GET GAME ARRAY BY CALLING DATASERVICE*/
+        $scope.groceriesArray = DataService.getGroceries();
+
+
+        /*ADD GAME FUNCTION BY CALLING DATASERVICE*/
+        $scope.addGrocery = function() {
+            DataService.newGrocery($scope.groceryItem);
+
+            $scope.groceryItem = '';
+        }
+
+
+
+        $scope.deleteGrocery = function(groceryToDelete) {
+            DataService.removeGrocery(groceryToDelete);
+        }
+
+
+    // Address Controller
 
     .controller('AddressController', function($scope, DataService) {
 
