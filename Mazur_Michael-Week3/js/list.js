@@ -4,7 +4,7 @@
 
 var app = angular.module('myApp', ['ngRoute']);
 
-    app.config(function($routeProvider){
+    .config(function($routeProvider){
 
         $routeProvider.when('/grocery', {
             templateUrl : "grocery-list.html",
