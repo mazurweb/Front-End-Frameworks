@@ -16,7 +16,7 @@ angular.module('myApp', ['ngRoute'])
             templateUrl : "address-book.html",
             controller : "AddressController"
         }).otherwise({
-           redirectTo : "/grocery"
+           redirectTo : "/grocery/MILK"
         });
 
     })
