@@ -22,7 +22,7 @@ angular.module('myApp', ['ngRoute'])
     })
 
     // Grocery Controller
-    .controller('GroceryController', function($scope,$routeParams,DataService){
+    .controller('GroceryController', function($scope,$routeParams,DataService) {
 
         $scope.groceryItem;
 
@@ -34,18 +34,17 @@ angular.module('myApp', ['ngRoute'])
 
 
         /*ADD GAME FUNCTION BY CALLING DATASERVICE*/
-        $scope.addGrocery = function() {
+        $scope.addGrocery = function () {
             DataService.newGrocery($scope.groceryItem);
 
             $scope.groceryItem = '';
         }
 
 
-
-        $scope.deleteGrocery = function(groceryToDelete) {
+        $scope.deleteGrocery = function (groceryToDelete) {
             DataService.removeGrocery(groceryToDelete);
         }
-
+    })
 
     // Address Controller
 
@@ -67,4 +66,4 @@ angular.module('myApp', ['ngRoute'])
         $scope.clearIt = function(){
             DataService.destroyLocalStorage();
         }
-    });
+    })

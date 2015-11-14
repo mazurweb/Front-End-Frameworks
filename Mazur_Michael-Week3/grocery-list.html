@@ -1,7 +1,7 @@
 <h2>Grocery List</h2>
 
 <div ng-controller="GroceryController" role="form" class="form-horizontal">
-    <form name="newGroceryItem">
+    <form>
         <input type="text" placeholder="Add a Grocery Item" ng-model="groceryItem" />
         <input type="submit" class="btn btn-primary" value="Add Item" ng-click="addGrocery()" />
         <div class="message">{{ msg }}</div>
