@@ -39,7 +39,6 @@ angular.module("myApp").service("DataService", function(){
     this.getAddresses = function(){
         var addArray = JSON.parse(localStorage.getItem("addresses")) || [];
         addressArray = addArray;
-        console.log(addArray);
         return addressArray;
     }
 

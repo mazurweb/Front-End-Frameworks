@@ -16,7 +16,7 @@
         <h3>Grocery Items ( {{ groceriesArray.length }} ):</h3>
 
         <ul ng-repeat="grocery in groceriesArray track by $id($index)">
-            <!--REPEATING LIST ITEMS USING ANGULARJS-->
+
             <li><div><span>&rarr; &nbsp;&nbsp;{{ grocery }}</span></div><button type="button" class="close" aria-hidden="true" ng-click="removeGrocery(grocery)">&times;</button></li>
         </ul>
     </div>
