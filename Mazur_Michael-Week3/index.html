@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <title>Everyday List Application</title>
+</head>
+<body ng-app="myApp">
+    <div id="wrapper">
+        <div class="container panel app">
+            <h1>Your Everyday to do items:</h1>
+
+            <div id="nav"><a href="#/View1">Grocery List</a> | <a href="#/View2">To Do List</a> | <a href="#/View3">Address Book</a></div>
+
+            <div ng-view></div>
+        </div>
+    </div>
+
+</body>
+
+<script src="js/shared/angular.min.js"></script>
+<script src="js/shared/angular-route.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+</html>
