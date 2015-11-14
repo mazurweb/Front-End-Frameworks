@@ -37,7 +37,7 @@ angular.module('myApp', ['ngRoute'])
         }
 
 
-        $scope.deleteGrocery = function (groceryToDelete) {
+        $scope.removeGrocery = function (groceryToDelete) {
             DataService.removeGrocery(groceryToDelete);
         }
     })
