@@ -66,4 +66,4 @@ angular.module('myApp', ['ngRoute'])
         $scope.clearIt = function(){
             DataService.destroyLocalStorage();
         }
-    })
+    });
