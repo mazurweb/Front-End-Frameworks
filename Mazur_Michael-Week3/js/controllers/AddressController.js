@@ -9,7 +9,7 @@ app.controller('AddressController', function($scope, DataService) {
     $scope.newAddress = {};
 
     $scope.addNewAddress= function() {
-        DataService.saveAddress($scope.newAddress.company, $scope.newAddress.street, $scope.newAddress.city, $scope.newAddress.state, $scope.newAddress.zipCode);
+        DataService.saveAddress($scope.newAddress.name, $scope.newAddress.street, $scope.newAddress.city, $scope.newAddress.state, $scope.newAddress.zipCode);
         $scope.newAddress = {};
     }
 
