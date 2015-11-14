@@ -1,5 +1,17 @@
 <h2>To Do List</h2>
 
 <div ng-controller="TODOController">
+    <form>
+        <input type="text" class="form-control" placeholder="Add an Item" ng-model="todoItem" />
+        <input type="submit" class="btn btn-primary" style="margin-top: 10px; padding: 7px 25px;" value="Add Item" ng-click="addItem()" />
+    </form>
 
+    <div class="listSection">
+        <h3>To Do List ( {{ todoArray.length }} ):</h3>
+
+        <ul ng-repeat="todo in todoArray track by $index">
+
+            <li><div><span>&rarr; &nbsp;&nbsp;{{ todo }}</span><button type="button" class="close" aria-hidden="true" ng-click="removeItem($index)">&times;</button></div></li>
+        </ul>
+    </div>
 </div>

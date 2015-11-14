@@ -42,6 +42,24 @@ angular.module('myApp', ['ngRoute'])
         }
     })
 
+    // TODO Controller
+
+    .controller('TODOController', function($scope, DataService) {
+        $scope.todoItem;
+
+        $scope.todoArray = DataService.getTODO();
+
+        $scope.addItem = function() {
+            DataService.newTODO($scope.todoItem);
+
+            $scope.todoItem = '';
+        }
+
+        $scope.removeItem = function(todo) {
+            DataService.removeTODO(todo);
+        }
+    })
+
     // Address Controller
 
     .controller('AddressController', function($scope, DataService) {

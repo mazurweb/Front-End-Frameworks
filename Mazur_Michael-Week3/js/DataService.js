@@ -10,8 +10,8 @@ angular.module("myApp").service("DataService", function(){
 
 
     this.getGroceries = function() {
-        var str = localStorage.getItem("GroceryList");
-        groceriesArray = JSON.parse(str)  || groceriesArray;
+
+        groceriesArray = JSON.parse(localStorage.getItem("GroceryList"))  || groceriesArray;
         return groceriesArray;
     }
 
@@ -26,7 +26,25 @@ angular.module("myApp").service("DataService", function(){
         localStorage.setItem("GroceryList", JSON.stringify(groceriesArray));
     }
 
+    // ToDo List
 
+    var todoArray = ["Wash my car", "Go grocery shopping", "Wash the dishes"];
+
+    this.getTODO = function() {
+
+        todoArray = JSON.parse(localStorage.getItem("ToDoList")) || todoArray;
+        return todoArray;
+    }
+
+    this.newTODO = function(todo) {
+        todoArray.push(todo);
+        localStorage.setItem("ToDoList", JSON.stringify(todoArray));
+    }
+
+    this.removeTODO = function(todo) {
+        todoArray.splice(todo, 1);
+        localStorage.setItem("ToDoList", JSON.stringify(todoArray));
+    }
 
 
     // Address Data Service Section
