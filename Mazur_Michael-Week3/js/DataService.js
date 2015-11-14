@@ -2,7 +2,7 @@
  * Created by mikemaz2005 on 11/13/15.
  */
 
-app.service("DataService", function(){
+angular.module("myApp").service("DataService", function(){
 
     // Address Data Service Section
 
