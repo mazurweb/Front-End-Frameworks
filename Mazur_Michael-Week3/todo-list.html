@@ -9,7 +9,7 @@
     <div class="listSection">
         <h3>To Do List ( {{ todoArray.length }} ):</h3>
 
-        <ul ng-repeat="todo in todoArray track by $index">
+        <ul class="col-md-6" ng-repeat="todo in todoArray track by $index">
 
             <li><div><span>&rarr; &nbsp;&nbsp;{{ todo }}</span><button type="button" class="close" aria-hidden="true" ng-click="removeItem($index)">&times;</button></div></li>
         </ul>
