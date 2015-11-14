@@ -2,7 +2,7 @@
  * Created by mikemaz2005 on 11/13/15.
  */
 
-var app = angular.module('myApp', ['ngRoute']);
+var app = angular.module('myApp', ['ngRoute'])
 
     .config(function($routeProvider){
 
