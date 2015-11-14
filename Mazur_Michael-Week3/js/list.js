@@ -28,12 +28,8 @@ angular.module('myApp', ['ngRoute'])
 
         $scope.word = $routeParams.groceryParam;
 
-
-        /*GET GAME ARRAY BY CALLING DATASERVICE*/
         $scope.groceriesArray = DataService.getGroceries();
 
-
-        /*ADD GAME FUNCTION BY CALLING DATASERVICE*/
         $scope.addGrocery = function () {
             DataService.newGrocery($scope.groceryItem);
 
