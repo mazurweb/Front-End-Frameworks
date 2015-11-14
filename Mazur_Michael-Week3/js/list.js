@@ -15,6 +15,8 @@ var app = angular.module('myApp', ['ngRoute']);
         }).when('/address', {
             templateUrl : "address-book.html",
             controller : "AddressController"
-        })
+        }).otherwise({
+           redirectTo : "/grocery"
+        });
 
     });
