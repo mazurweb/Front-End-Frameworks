@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dcef656-d062-49ff-a2c6-5bd582d987a2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mazur_Michael-Week3/js/DataService.js" afterPath="$PROJECT_DIR$/Mazur_Michael-Week3/js/DataService.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mazur_Michael-Week3/grocery-list.html" afterPath="$PROJECT_DIR$/Mazur_Michael-Week3/grocery-list.html" />
     </list>
     <ignored path="Front-End-Frameworks.iws" />
@@ -38,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="grocery-list.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="grocery-list.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Mazur_Michael-Week3/grocery-list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="476">
-              <caret line="17" column="68" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
+            <state vertical-scroll-proportion="0.3232662" vertical-offset="0" max-vertical-offset="894">
+              <caret line="17" column="71" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -68,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="address-book.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="address-book.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Mazur_Michael-Week3/address-book.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6655481" vertical-offset="0" max-vertical-offset="901">
-              <caret line="35" column="104" selection-start-line="35" selection-start-column="104" selection-end-line="35" selection-end-column="104" />
+            <state vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="901">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#hr#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -487,14 +486,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mazur_Michael-Week3/grocery-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="476">
-          <caret line="17" column="68" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Mazur_Michael-Week3/js/DataService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1071">
@@ -505,11 +496,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Mazur_Michael-Week3/address-book.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6655481" vertical-offset="0" max-vertical-offset="901">
-          <caret line="35" column="104" selection-start-line="35" selection-start-column="104" selection-end-line="35" selection-end-column="104" />
+        <state vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="901">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#hr#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mazur_Michael-Week3/grocery-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3232662" vertical-offset="0" max-vertical-offset="894">
+          <caret line="17" column="71" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
+          <folding />
         </state>
       </provider>
     </entry>

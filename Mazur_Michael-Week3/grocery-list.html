@@ -15,7 +15,7 @@
     <div class="listSection">
         <h3>Grocery Items ( {{ groceriesArray.length }} ):</h3>
 
-        <ul ng-repeat="grocery in GroceryList track by $id($index)">
+        <ul ng-repeat="grocery in groceriesArray track by $id($index)">
 
             <li><div><span>&rarr; &nbsp;&nbsp;{{ grocery }}</span><button type="button" class="close" aria-hidden="true" ng-click="removeGrocery(grocery)">&times;</button></div></li>
         </ul>
