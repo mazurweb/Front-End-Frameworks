@@ -16,17 +16,14 @@ angular.module("myApp").service("DataService", function(){
     }
 
     this.newGrocery = function(grocery) {
-        var newGrocery = grocery;
 
-        groceriesArray.push(newGrocery);
-        var str = JSON.stringify(groceriesArray);
-        localStorage.setItem("GroceryList", str);
+        groceriesArray.push(grocery);
+        localStorage.setItem("GroceryList", JSON.stringify(groceriesArray));
     }
 
     this.removeGrocery = function(grocery) {
-        groceriesArray.splice(groceriesArray.indexOf(grocery), 1);
-        var str = JSON.stringify(groceriesArray);
-        localStorage.setItem("GroceryList", str);
+        groceriesArray.splice(grocery, 1);
+        localStorage.setItem("GroceryList", JSON.stringify(groceriesArray));
     }
 
 
