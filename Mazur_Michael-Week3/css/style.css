@@ -1,0 +1,13 @@
+body {
+    background: #e5e5e5;
+}
+div.app {
+    padding: 10px;
+    margin-top: 25px;
+}
+div.app h1 {
+    text-align: center;
+}
+#nav {
+    text-align: center;
+}
